@@ -19,7 +19,7 @@ get_bucket_policy <- function(bucket, parse_response = TRUE, ...){
                 parse_response = FALSE, 
                 ...)
     if (isTRUE(parse_response)) {
-        r <- httr::content(r, "text", encoding = "UTF-8")
+        r <- content(r, "text", encoding = "UTF-8")
     }
     return(r)
 }

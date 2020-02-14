@@ -46,24 +46,24 @@ putobject <- function(...) {
 #' @rdname deprecated-aws.s3
 #' @export
 deleteobject <- function(...) {
-    .Deprecated("delete_object()", "aws.s3")
+    warning("delete_object()", "aws.s3")
     delete_object(...)
 }
 #' @rdname deprecated-aws.s3
 #' @export
 getbucket <- function(...) {
-    .Deprecated("get_bucket()", "aws.s3")
+    warning("get_bucket()", "aws.s3")
     get_bucket(...)
 }
 #' @rdname deprecated-aws.s3
 #' @export
 deletebucket <- function(...) {
-    .Deprecated("delete_bucket()", "aws.s3")
+    warning("delete_bucket()", "aws.s3")
     delete_bucket(...)
 }
 #' @rdname deprecated-aws.s3
 #' @export
 bucketexists <- function(...) {
-    .Deprecated("bucket_exists()", "aws.s3")
+    warning("bucket_exists()", "aws.s3")
     bucket_exists(...)
 }
